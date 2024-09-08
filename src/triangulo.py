@@ -1,5 +1,7 @@
 def evaluar(a, b, c):
+    # Verificar si el triángulo es válido
     if a < (b + c) and b < (a + c) and c < (a + b):
+        # Verificar el tipo de triángulo
         if a == b == c:
             return "El triángulo es equilátero"
         elif a == b or b == c or a == c:
@@ -8,17 +10,13 @@ def evaluar(a, b, c):
             return "El triángulo es escaleno"
     else:
         return "No es un triángulo válido"
-
-
-
-
-if _name_ == '_main_':
+    
+if __name__ == '_main_':
     print("a:", end="")
     a = float(input())
     print("b:", end="")
     b = float(input())
     print("c:", end="")
-    c = float(input())
-        
+    c = float(input())     
     respuesta = evaluar(a, b, c)
     print(respuesta)
