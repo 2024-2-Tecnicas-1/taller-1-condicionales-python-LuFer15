@@ -9,7 +9,7 @@ print('root_path:')
 print(root_path)
 sys.path.append(str(root_path))
 
-from src.triangulo import evaluar
+
 
 class TestTriangulo(unittest.TestCase):
     def test_no_valido_1(self):
