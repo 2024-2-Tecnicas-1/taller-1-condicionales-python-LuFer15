@@ -11,7 +11,6 @@ def evaluar(peso, estatura, edad):
         else:
             return "alto"
 
-
 if __name__ == '__main__':
     print("Peso:", end="")
     peso = int(input())

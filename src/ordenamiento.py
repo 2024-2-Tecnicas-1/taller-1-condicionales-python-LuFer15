@@ -8,7 +8,6 @@ def evaluar(numero1, numero2, numero3, numero4):
             resultado.append(" ")
     return ''.join(resultado)
 
-
 if __name__ == '__main__':
     print("Número 1:", end="")
     numero1 = int(input())

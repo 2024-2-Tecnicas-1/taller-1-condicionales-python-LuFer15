@@ -13,7 +13,6 @@ def evaluar(dividendo, divisor):
 
     return respuesta
 
-
 if __name__ == '__main__':
     print("Dividendo:", end="")
     dividendo = int(input())
