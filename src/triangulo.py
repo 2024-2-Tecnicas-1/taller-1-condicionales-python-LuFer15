@@ -1,12 +1,16 @@
 def evaluar(a, b, c):
-    if a <= 0 or b <= 0 or c <= 0 or a + b <= c or a + c <= b or b + c <= a:
-        return "No es un triángulo válido"
-    if a == b == c:
-        return "El triángulo es equilátero"
-    elif a == b or b == c or a == c:
-        return "El triángulo es isósceles"
+    # Verificar si el triángulo es válido
+    if a < (b + c) and b < (a + c) and c < (a + b):
+        # Verificar el tipo de triángulo
+        if a == b == c:
+            return "El triángulo es equilátero"
+        elif a == b or b == c or a == c:
+            return "El triángulo es isósceles"
+        else:
+            return "El triángulo es escaleno"
     else:
-        return "El triángulo es escaleno"
+        return "No es un triángulo válido"
+
 
 if __name__ == '__main__':
     print("a:", end="")
