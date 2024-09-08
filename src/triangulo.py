@@ -11,7 +11,6 @@ def evaluar(a, b, c):
     else:
         return "No es un triángulo válido"
 
-
 if __name__ == '__main__':
     print("a:", end="")
     a = float(input())

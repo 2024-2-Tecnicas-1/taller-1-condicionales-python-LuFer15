@@ -10,6 +10,7 @@ def evaluar(caracter):
             return "Es letra minúscula"
     return "No es letra ni número"
 
+
 if __name__ == '__main__':
     print("Caracter:", end='')
     caracter = input()
